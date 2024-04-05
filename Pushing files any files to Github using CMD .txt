@@ -1,0 +1,57 @@
+==> Go to the files directory in the folder explorer & type CMD in the path bar ::
+==> 	FILES SMALLER THAN 100 MB
+1- git init -b main
+--------->>>> Initialize the local directory as a Git repository.
+
+2- git add . && git commit -m "initial commit"
+--------->>>> Stage and commit all the files in your project.
+
+3- git remote add origin <REMOTE_URL> ==> the newly created repository URL in github.
+--------->>>> Sets the new remote.
+
+4- git remote -v
+--------->>>> Verifies the new remote URL.
+
+5- git push origin main
+--------->>>> Pushes the changes in your local repository up to the remote repository you specified as the origin.
+
+The error fatal: The remote end hung up unexpectedly occurs when the default file post size has been exceeded.
+
+If you are posting over HTTP, navigate to the repository and type the following in the terminal:
+
+==> Solution ==> git config http.postBuffer 524288000 in the CMD.
+
+If you are posting over SSH, navigate to the repository and type the following in the terminal:
+
+==> Solution ==> git config ssh.postBuffer 524288000 in the CMD.
+
+=============================================================================================
+==> 	FILES LARGER THAN 100 MB
+
+1- git init -b main
+--------->>>> Initialize the local directory as a Git repository.
+
+2- git remote add origin <REMOTE_URL> ==> the newly created repository URL in github.
+--------->>>> Sets the new remote.
+
+3- git lfs install 
+--------->>>> Installs the Git Large File Storage.
+
+4- git lfs track "*" OR  git lfs track "* .any file extention that we want to track or upload"
+--------->>>> Tracks a specific file type to upload or all file types in case of "*".
+
+5- git add . && git commit -m "initial commit"
+--------->>>> Stage and commit all the files in your project.
+
+6- git config core.longpaths true
+--------->>>> permits including files with very long names .
+
+7- git lfs push - - all origin main
+--------->>>> Pushes all the tracked files to the lfs.
+
+8- git push -u origin main
+--------->>>> Pushes the changes in your local repository up to the remote repository you specified as the origin.
+
+Access Token command for the kratos Github account
+======================================================================
+git remote set-url origin https://Kratos-ZEUS-5001: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@github.com/Kratos-ZEUS-5001/RTS-Projecttt.git

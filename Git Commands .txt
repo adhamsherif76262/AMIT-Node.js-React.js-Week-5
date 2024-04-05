@@ -1,0 +1,36 @@
+git init ==> Initializes the local git repository.
+
+git status ==> displays the current commit point we are standing at + the untracked file/files if exsisted.
+
+git add (file name) ==> Keeps Track of Certain file/files in the local repository.
+
+git add . ==> Keeps Track of all the files in the local repository.
+
+git commit  -m "Commit Message" ==> Saves the changes applied on the tracked file/files [The git add command is neccesary before each  git commit command].
+
+git log ==> Displays the history of all the commits done on the tracked files.
+
+git checkout (required Commit point Hash Code ex:: 7cf98ed897c4d2922ea1cce8212c03b393a7d366) ==> Rolls back to a certain Commit point using its hash code.
+[The git log command is neccesary at least once before the git checkout command to locate the commit point hash code required to roll back to].
+
+git branch {Branch Name} ==> Creates a new branch.
+
+git checkout {Branch Name} ==> stands on the {Branch Name created}.
+
+git merge {Branch Name} ==> Merges the stated branch onto the main one.
+
+git remote add origin {Online repository link} ==> Links the local repository to the online one.
+
+git remote -v ==> displays the online repository which the local one is linked to.
+
+git push -u origin {Branch Name} ==> uploads the code files of the last commit from the local repository to the online one on the specified branch name.
+
+git push origin HEAD ==> uploads the code files of the last commit from the local repository to the online one on the branch that we currently are standing on.
+
+git pull origin {Branch Name} ==> Downloads the code files of the last commit from the Online repository to the local one of the specified branch name.
+
+git pull origin HEAD ==> Downloads the code files of the last commit from the online repository to the local one of the branch that we currently are standing on.
+
+git clone {Online Repository Link} ==> Clones all the code files from the online Repository to the local one.
+
+git clone -b {Branch Name} ==> Clones all the code files from the online Repository to the local one of the Specified branch name.
