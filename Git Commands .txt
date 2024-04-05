@@ -2,7 +2,9 @@ git init ==> Initializes the local git repository.
 
 git status ==> displays the current commit point we are standing at + the untracked file/files if exsisted.
 
-git add (file name) ==> Keeps Track of Certain file/files in the local repository.
+git add (file name without spaces) ==> Keeps Track of Certain file/files in the local repository.
+
+git add 'File Name With Spaces' ==> Keeps Track of Certain file/files in the local repository.
 
 git add . ==> Keeps Track of all the files in the local repository.
 
