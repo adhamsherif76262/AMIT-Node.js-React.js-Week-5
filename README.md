@@ -1,6 +1,6 @@
 # Repository Description
 
-###This File *Contains* the **Description** of this Repository.
+### This File *Contains* the **Description** of this Repository.
 The purpose of this repository is to List ::
 
 - Thgit inite most commonly used **Git Line Commands** & their description.
